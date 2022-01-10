@@ -34,7 +34,10 @@ ul li {
   justify-content: center;
 }
 
-img {
+h2 {
+  position: absolute;
+}
+.Flex {
   flex: 40%;
   display: flex;
   justify-content: center;
