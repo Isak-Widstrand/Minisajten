@@ -29,6 +29,17 @@ ul li {
   font-size: 200%;
 }
 
+h1 {
+  text-align: center;
+}
+
+.intro-text {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
 .flex-container {
   width: 100%;
   display: flex;
@@ -42,35 +53,7 @@ img {
   display: flex;
   flex: 40%;
   margin: 5%;
-  width: auto;
-}
-
-.image-container {
-  position: relative;
-  width: auto;
-}
-
-.image-container img {
-  width: auto;
-  height: auto;
-}
-
-.image-container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-}
-
-h2 {
+  max-width: 40%;
 }
 
 footer {
