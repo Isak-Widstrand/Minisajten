@@ -2,26 +2,28 @@
 
 header {
   border: 2px solid black;
+  font-size: 2vh;
+  text-align: center;
 }
 
-.a1 {
+ul li a {
   color: black;
   text-decoration: none;
 }
 
-.a1:visited {
+ul li a:visited {
   color: black;
   text-decoration: none;
 }
 
-.a1:hover {
+ul li a:hover {
   padding-bottom: 7px;
   border-bottom: 3px solid black;
 }
 
 ul li {
   list-style-type: none;
-  margin-left: 10.5%;
+  margin: 5%;
   padding: 0;
   display: inline;
   font-size: 200%;
@@ -50,26 +52,58 @@ h1 {
   gap: 5%;
 }
 
-img {
+.main-images {
   width: 40vw;
   height: 45vh;
+  animation: image-animation 2s;
+}
+
+.second-images {
+  width: 25vw;
+  height: 45vh;
+}
+
+@keyframes image-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .img-container {
   width: 40vw;
   position: relative;
+  animation: text-animation 2s;
 }
 
 .img-text {
+  font-size: 2vh;
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2vw;
+  right: 2vw;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 2em;
+  padding-right: 2em;
   font-family: "Luxurious Roman", cursive;
+  animation: text-animation 2s;
+}
+
+.img-text:hover {
+}
+
+@keyframes text-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 footer {
@@ -85,8 +119,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  img {
-    width: 80vw;
-    height: 35vh;
+  .flex-container {
+    flex-direction: column;
+  }
+  .main-images {
+    width: 95vw;
+    height: 40vh;
   }
 }
